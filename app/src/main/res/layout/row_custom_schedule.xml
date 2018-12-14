@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#263238">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:paddingRight="10dp"
+                android:text="class name will appear here "
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/classTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/className"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:paddingRight="7dp"
+                android:text="time here"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/className"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/classTime"
+                android:fontFamily="@font/product_sans_regular"
+                android:paddingRight="7dp"
+                android:text="room here"
+                android:textColor="#bdbdbd"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:background="#484848" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
